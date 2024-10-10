@@ -1,13 +1,15 @@
 import { HeaderContainer } from '../assets/Styles/Header';
-import slogan from '../assets/images/slogan.png';
+import LeftSideHeader from './LeftSideHeader';
+import RightSideHeader from './RightSideHeader';
 
 
 export default function Header() {
     return (
         <HeaderContainer>
-            <img src={slogan} alt="" />
+            <LeftSideHeader />
+            <RightSideHeader />
         </HeaderContainer>
     );
 }
 
-;
+
