@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const OnPop = styled.div`
     width: 100%;
-   // background-color: red;
     display: flex; 
     align-items: center;
     justify-content: space-around;
@@ -14,11 +13,10 @@ export const Broker = styled.div`
     width: 379px;
     border-radius: 5px;
     border: 1px solid black;  
-   // background-color: aqua;
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
-  .image-container{
+    .image-container{
         position: relative;
         height: 168px;
         width: 168px;
@@ -29,8 +27,8 @@ export const Broker = styled.div`
         align-items: center;
         border: 1px solid black;
         margin-left: 8px;
-}
-  .blurred-image {
+    }
+    .blurred-image {
         position: absolute;
         top: 0;
         left: 0;
@@ -39,36 +37,35 @@ export const Broker = styled.div`
         filter: blur(3px);
         transform: scale(1.5); 
         z-index: 1;
-  }
-  .sharp-image {
+    }
+    .sharp-image {
         position: relative;
         z-index: 2;
         width: 100%; 
         border-radius: 2%;
         object-fit: cover; 
-  }
-  .data-container{
-        margin-left: 10px;
-        
-  }
-  .data-name{
-    font-size: 20px;
-    color: #1B2653;
-  }
-  .data-points{
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .data-telephone{
-    font-size: 10px;
-  }
-  .data-seePhone{
-    font-size: 10px;
-    color: #FE6613;
-    text-decoration: underline;
-    cursor: pointer
-  }
+    }
+    .data-container{
+        margin-left: 10px;   
+    }
+    .data-name{
+        font-size: 20px;
+        color: #1B2653;
+    }
+    .data-points{
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .data-telephone{
+        font-size: 10px;
+    }
+    .data-seePhone{
+        font-size: 10px;
+        color: #FE6613;
+        text-decoration: underline;
+        cursor: pointer
+    }
 `;
 
 export const Data = styled.div`
@@ -83,8 +80,6 @@ export const Message = styled.div`
     border: 1px solid black;
     box-sizing: border-box;
     padding: 15px;
-
-   // background-color: #15ff00;
     .title-message{
         margin-top: 10px;
         font-size: 30px;
@@ -104,7 +99,6 @@ export const Message = styled.div`
         height: 20%;
         font-family: 'roboto';
         resize: none; 
-
     }
     .toSend-message {
         background-color: #FE6613;
@@ -115,9 +109,7 @@ export const Message = styled.div`
         border-radius: 5px;
         cursor: pointer;
         margin-top: 5px;
-
     }
-
     .toSend-message:hover {
         background-color: #e65c00;
     }
@@ -129,7 +121,70 @@ export const Rule3 = styled.div`
     width: 379px;
     border-radius: 5px;
     border: 1px solid black;
-   // background-color: blue;
+    box-sizing: border-box;
+    padding: 15px;
+   .title-rule{
+        margin-top: 10px;
+        font-size: 30px;
+        color: #1B2653;
+        margin-bottom: 15px;
+   }
+   .allBox-rule{
+        height: 200px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 35px;
+   }
+   .value-rule{
+        width: 30%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'roboto';
+   }
+   .divider-rule{
+        width: 70px;
+        height: 0px;
+        border: 1px solid #817b7b;
+   }
+   .firstBox-rule{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        
+   }
+   .secondBox-rule{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   .result-rule{
+        width: 30%;
+        height: 18px;
+        padding: 10px;
+        border: 1px solid #FE6613;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'roboto';
+   }
+   .calculate{
+        background-color: #FE6613;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    .calculate:hover {
+        background-color: #e65c00;
+    
+    }
 `;
 
 export const Below = styled.div`
