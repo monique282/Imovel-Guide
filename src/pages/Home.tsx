@@ -30,14 +30,15 @@ export default function Home() {
           <Broker >
             {listBroker.map((broker, index) => (
               <Data key={index}>
-                <>    
-                <img src={broker.image} alt="Broker profile" />
-                </>
-                <>
-                <h2>{broker.name}</h2>
-                <p>Points: {broker.points}</p>
-                <p>Telephone: {broker.telephone}</p>
-                </>
+                <div className="image-container">
+                  <img className="blurred-image" src={broker.image} alt={`${broker.name} blurred`} />
+                  <img className="sharp-image" src={broker.image} alt={`${broker.name} sharp`} />
+                </div>
+                <div className="data-container">
+                  <h2 className="data-name">{broker.name}</h2>
+                  <p className="data-points" >Points: {broker.points}</p>
+                  <p className="data-telephone">Telephone: {broker.telephone}</p>
+                </div>
               </Data>
             ))}
           </Broker>
