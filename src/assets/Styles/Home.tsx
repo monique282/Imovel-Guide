@@ -9,10 +9,6 @@ export const OnPop = styled.div`
     margin-top: 50px;
 `;
 
-export const BrokersProfile = styled.div`
-`;
-
-
 export const Broker = styled.div`
     height: 371px;
     width: 379px;
@@ -26,11 +22,13 @@ export const Broker = styled.div`
         position: relative;
         height: 168px;
         width: 168px;
-        border-radius: 2%;
+        border-radius: 3%;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 1px solid black;
+        margin-left: 8px;
 }
   .blurred-image {
         position: absolute;
@@ -56,6 +54,11 @@ export const Broker = styled.div`
   .data-name{
     font-size: 20px;
     color: #1B2653;
+  }
+  .data-points{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 `;
 

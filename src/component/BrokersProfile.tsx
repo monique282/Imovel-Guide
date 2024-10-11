@@ -1,4 +1,4 @@
-import {  BrokersProfile, Broker, Data } from "../assets/Styles/Home";
+import { Broker, Data } from "../assets/Styles/Home";
 import { useRef } from "react";
 export default function BrokersProfileHome() {
   const listBroker = [
@@ -9,9 +9,7 @@ export default function BrokersProfileHome() {
   const brokersRef = useRef(null);
 
   return (
-  
-        <BrokersProfile ref={brokersRef}>
-          <Broker >
+          <Broker ref={brokersRef}>
             {listBroker.map((broker, index) => (
               <Data key={index}>
                 <div className="image-container">
@@ -25,9 +23,7 @@ export default function BrokersProfileHome() {
                 </div>
               </Data>
             ))}
-          </Broker>
-        </BrokersProfile>
-        
+          </Broker>  
    
   );
 }
