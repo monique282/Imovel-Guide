@@ -7,7 +7,6 @@ import Rule from "../component/Home/Rule3";
 
 export default function Home() {
 
-
   return (
     <>
       <OnPop>

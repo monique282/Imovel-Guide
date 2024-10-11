@@ -11,8 +11,7 @@ export default function AnimationImageDownload() {
                     Imovel guide
                 </button>
             </ImageAnimation>
-            <button className="buton-image"
-            >
+            <button className="buton-image">
                 Download
             </button>
         </HomeAnimationImageDownload>

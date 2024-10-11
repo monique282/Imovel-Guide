@@ -255,14 +255,12 @@ export const ImageAnimation = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-
     .home-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 5px;
     }
-
     .buton-image {
         position: absolute;
         bottom: 10px;
