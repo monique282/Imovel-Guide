@@ -21,7 +21,6 @@ const Reset = createGlobalStyle`
         font: inherit;
         vertical-align: baseline;
     }
-    /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {
         display: block;
@@ -43,6 +42,11 @@ const Reset = createGlobalStyle`
     table {
         border-collapse: collapse;
         border-spacing: 0;
+    }
+    html, body, #root {
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
 `;
 

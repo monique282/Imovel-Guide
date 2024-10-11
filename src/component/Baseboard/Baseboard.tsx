@@ -1,14 +1,14 @@
-import { HeaderContainer } from '../../assets/Styles/Header';
+import { BaseboarContainer } from '../../assets/Styles/Baseboard';
 import LeftSideHeader from './LeftSideHeader';
-// import RightSideHeader from './RightSideHeader';
+import RightSideHeader from './RightSideHeader';
 
 
 export default function Baseboard() {
     return (
-        <HeaderContainer>
+        <BaseboarContainer>
             <LeftSideHeader />
-            {/* <RightSideHeader /> */}
-        </HeaderContainer>
+            <RightSideHeader />
+        </BaseboarContainer>
     );
 }
 
