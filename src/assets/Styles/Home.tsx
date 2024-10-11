@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const OnPop = styled.div`
     width: 100%;
-    background-color: red;
+   // background-color: red;
     display: flex; 
     align-items: center;
     justify-content: space-around;
@@ -13,8 +13,8 @@ export const Broker = styled.div`
     height: 371px;
     width: 379px;
     border-radius: 5px;
-    border: 2px solid black;  
-    background-color: aqua;
+    border: 1px solid black;  
+   // background-color: aqua;
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
@@ -80,8 +80,47 @@ export const Message = styled.div`
     height: 371px;
     width: 379px;
     border-radius: 5px;
-    border: 2px solid black;
-    background-color: #15ff00;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 15px;
+
+   // background-color: #15ff00;
+    .title-message{
+        margin-top: 10px;
+        font-size: 30px;
+        color: #1B2653;
+        margin-bottom: 15px;
+    }
+    .cpf-message, .phone-message, .subject-message {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'roboto';
+    }
+    .subject-message {
+        height: 20%;
+        font-family: 'roboto';
+        resize: none; 
+
+    }
+    .toSend-message {
+        background-color: #FE6613;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+
+    }
+
+    .toSend-message:hover {
+        background-color: #e65c00;
+    }
 
 `;
 
@@ -89,12 +128,12 @@ export const Rule3 = styled.div`
     height: 371px;
     width: 379px;
     border-radius: 5px;
-    border: 2px solid black;
-    background-color: blue;
+    border: 1px solid black;
+   // background-color: blue;
 `;
 
 export const Below = styled.div`
     width: 100%;
-    background-color: blue;
+  // background-color: blue;
 `;
 
