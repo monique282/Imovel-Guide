@@ -23,8 +23,8 @@ export default function MessageHome() {
 
     return (
         <Message>
+            <div className="inputContainer-message">
             <h1 className="title-message">Mande uma mensagem:</h1>
-
             <InputMask
                 mask="999.999.999-99"
                 className="cpf-message"
@@ -32,8 +32,7 @@ export default function MessageHome() {
                 value={cpf}
                 onChange={(e) => validatingCpf(e, setCpf, setCpfError)}
             />
-            {cpfError && <p style={{ color: 'red', marginTop: -20, marginBottom: 10 }}>{cpfError}</p>}
-
+            {cpfError && <p style={{ color: 'red', marginTop: -4, marginBottom: 10, fontSize:12 }}>{cpfError}</p>}
             <InputMask
                 mask="(99) 99999-9999"
                 className="phone-message"
@@ -41,8 +40,7 @@ export default function MessageHome() {
                 value={phone}
                 onChange={(e) => validatingPhone(e, setPhone, setPhoneError)} 
             />
-            {phoneError && <p style={{ color: 'red', marginTop: -20, marginBottom: 10 }}>{phoneError}</p>}
-
+            {phoneError && <p style={{ color: 'red', marginTop: -4, marginBottom: 10, fontSize:12 }}>{phoneError}</p>}
             <textarea
                 className="subject-message"
                 placeholder="Digite o assunto"
@@ -50,8 +48,8 @@ export default function MessageHome() {
                 value={subject}
                 onChange={(e) => validatingSubject(e, setSubject, setSubjectError)} 
             ></textarea>
-            {subjectError && <p style={{ color: 'red', marginTop: -20, marginBottom: 10 }}>{subjectError}</p>}
-
+            {subjectError && <p style={{ color: 'red', marginTop: -8, marginBottom: 10, fontSize:12 }}>{subjectError}</p>}
+            </div>
             <button className="toSend-message" onClick={sendData}>
                 Enviar Mensagem
             </button>

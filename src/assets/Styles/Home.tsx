@@ -80,15 +80,19 @@ export const Message = styled.div`
     border: 1px solid black;
     box-sizing: border-box;
     padding: 15px;
+    .inputContainer-message{
+        height: 85%;
+        width: 99%;
+    }
     .title-message{
         margin-top: 5px;
         font-size: 30px;
         color: #1B2653;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .cpf-message, .phone-message, .subject-message {
         width: 90%;
-        padding: 10px;
+        padding: 7px;
         margin-bottom: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -100,7 +104,7 @@ export const Message = styled.div`
         font-family: 'roboto';
         resize: none; 
     }
-    .toSend-message {
+    .toSend-message { 
         background-color: #FE6613;
         color: white;
         border: none;
@@ -108,7 +112,7 @@ export const Message = styled.div`
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .toSend-message:hover {
         background-color: #e65c00;
@@ -191,7 +195,7 @@ export const Rule3 = styled.div`
 export const Below = styled.div`
     width: 100%;
     display: flex; 
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin-top: 30px;
 `;
@@ -272,4 +276,13 @@ export const ImageAnimation = styled.div`
         border-radius: 5px;
         cursor: pointer;
     }
+`
+export const HomeImage3 = styled.div`
+    width: 100%;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 `
