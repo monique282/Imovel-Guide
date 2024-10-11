@@ -1,46 +1,15 @@
 import { useState } from "react";
 import { Message } from "../assets/Styles/Home";
 import InputMask from "react-input-mask";
+import { validatingCpf, validatingPhone, validatingSubject } from "./FieldValidation";
 
 export default function MessageHome() {
-    const [cpf, setCpf] = useState("");
-    const [phone, setPhone] = useState("");
-    const [subject, setSubject] = useState("");
-
-    const [cpfError, setCpfError] = useState("");
-    const [phoneError, setPhoneError] = useState("");
-    const [subjectError, setSubjectError] = useState("");
-
-    const validatingCpf = (e) => {
-        const value = e.target.value;
-        setCpf(value);
-        const cleanedCpf = value.replace(/\D/g, "");
-        if (cleanedCpf.length < 11) {
-            setCpfError("CPF inválido. Deve ter 11 dígitos.");
-        } else {
-            setCpfError("");
-        }
-    };
-
-    const validatingPhone = (e) => {
-        const value = e.target.value;
-        setPhone(value);
-        const cleanedPhone = value.replace(/\D/g, "");
-        if (cleanedPhone.length < 10) {
-            setPhoneError("Telefone inválido. Deve ter pelo menos 10 dígitos.");
-        } else {
-            setPhoneError("");
-        }
-    };
-    const validatingSubject = (e) => {
-        const value = e.target.value;
-        setSubject(value);
-        if (subject.length < 5) {
-            setSubjectError("Precisa ter um assunto para fazer o envio.");
-        } else {
-            setSubjectError("");
-        }
-    };
+    const [cpf, setCpf] = useState<string>("");
+    const [phone, setPhone] = useState<string>("");
+    const [subject, setSubject] = useState<string>("");
+    const [cpfError, setCpfError] = useState<string>("");
+    const [phoneError, setPhoneError] = useState<string>("");
+    const [subjectError, setSubjectError] = useState<string>("");
 
     const sendData = () => {
         if (!cpfError && !phoneError && !subjectError) {
@@ -48,7 +17,7 @@ export default function MessageHome() {
             setPhone("");
             setSubject("");
         } else {
-            alert("Preencha o campo do assunto.");
+            alert("Preencha os campos corretamente.");
         }
     };
 
@@ -61,16 +30,16 @@ export default function MessageHome() {
                 className="cpf-message"
                 placeholder="Digite seu CPF"
                 value={cpf}
-                onChange={validatingCpf}
+                onChange={(e) => validatingCpf(e, setCpf, setCpfError)}
             />
-            {cpfError && <p style={{ color: 'red',marginTop: -20, marginBottom: 10 }}>{cpfError}</p>}
+            {cpfError && <p style={{ color: 'red', marginTop: -20, marginBottom: 10 }}>{cpfError}</p>}
 
             <InputMask
                 mask="(99) 99999-9999"
                 className="phone-message"
                 placeholder="Digite seu telefone"
                 value={phone}
-                onChange={validatingPhone}
+                onChange={(e) => validatingPhone(e, setPhone, setPhoneError)} 
             />
             {phoneError && <p style={{ color: 'red', marginTop: -20, marginBottom: 10 }}>{phoneError}</p>}
 
@@ -79,7 +48,7 @@ export default function MessageHome() {
                 placeholder="Digite o assunto"
                 maxLength={200}
                 value={subject}
-                onChange={validatingSubject}
+                onChange={(e) => validatingSubject(e, setSubject, setSubjectError)} 
             ></textarea>
             {subjectError && <p style={{ color: 'red', marginTop: -20, marginBottom: 10 }}>{subjectError}</p>}
 
