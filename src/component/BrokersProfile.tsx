@@ -1,5 +1,6 @@
 import { Broker, Data } from "../assets/Styles/Home";
 import { useRef, useState } from "react";
+import formatPhone from "../utils/FormatPhone"
 
 export default function BrokersProfileHome() {
 
@@ -32,7 +33,7 @@ export default function BrokersProfileHome() {
             <h2 className="data-name">{broker.name}</h2>
             <p className="data-points">{broker.points} pontos</p>
             {seePhone[index] ? (
-              <p className="data-telephone">{broker.telephone}</p>
+              <p className="data-telephone">{formatPhone(broker.telephone)}</p>
             ) : (
               <p className="data-seePhone" onClick={() => phoneVisibility(index)}>
                 ver telefone
