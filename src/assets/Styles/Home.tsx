@@ -7,7 +7,6 @@ export const OnPop = styled.div`
     justify-content: space-around;
     margin-top: 30px;
 `;
-
 export const Broker = styled.div`
     height: 300px;
     width: 350px;
@@ -67,12 +66,10 @@ export const Broker = styled.div`
         cursor: pointer
     }
 `;
-
 export const Data = styled.div`
     display: flex;
     align-items: center;
 `;
-
 export const Message = styled.div`
     height: 300px;
     width: 350px;
@@ -99,6 +96,11 @@ export const Message = styled.div`
         font-size: 16px;
         font-family: 'roboto';
     }
+    .cpf-message::placeholder, 
+    .phone-message::placeholder, 
+    .subject-message::placeholder {
+        color: #999; 
+    }
     .subject-message {
         height: 20%;
         font-family: 'roboto';
@@ -117,9 +119,7 @@ export const Message = styled.div`
     .toSend-message:hover {
         background-color: #e65c00;
     }
-
 `;
-
 export const Rule3 = styled.div`
     height: 300px;
     width: 350px;
@@ -148,6 +148,9 @@ export const Rule3 = styled.div`
         border-radius: 5px;
         font-size: 16px;
         font-family: 'roboto';
+   }
+   .value-rule::placeholder{
+        color: #999; 
    }
    .divider-rule{
         width: 50px;
@@ -191,7 +194,6 @@ export const Rule3 = styled.div`
         background-color: #e65c00;
     }
 `;
-
 export const Below = styled.div`
     width: 100%;
     display: flex; 
@@ -284,5 +286,4 @@ export const HomeImage3 = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 `

@@ -15,12 +15,14 @@ export default function Rule() {
             <div className="firstBox-rule">
               <input
                 className="value-rule"
+                 placeholder="60"
                 value={first}
                 onChange={(e) => setFirst(e.target.value)} >
               </input>
               <div className="divider-rule"></div>
               <input
                 className="value-rule"
+                placeholder="100"
                 value={second}
                 onChange={(e) => setSecond(e.target.value)} >
               </input>
@@ -28,6 +30,7 @@ export default function Rule() {
             <div className="secondBox-rule">
               <input
                 className="value-rule"
+                 placeholder="30"
                 value={third}
                 onChange={(e) => setThird(e.target.value)} >
               </input>
