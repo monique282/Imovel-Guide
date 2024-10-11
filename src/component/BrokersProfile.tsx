@@ -1,6 +1,10 @@
 import { Broker, Data } from "../assets/Styles/Home";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+
 export default function BrokersProfileHome() {
+
+ const [seePhone,setSeePhone] = useState(false);
+
   const listBroker = [
     { image: "https://img.freepik.com/fotos-gratis/mulher-de-negocios-elegante-e-confiante-sorrindo_176420-19466.jpg", name: "Monique", points: "1200", telephone: "38998152601" },
     { image: "https://img.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_176420-18743.jpg", name: "Patrick", points: "1100", telephone: "34997734653" }
@@ -19,7 +23,11 @@ export default function BrokersProfileHome() {
                 <div className="data-container">
                   <h2 className="data-name">{broker.name}</h2>
                   <p className="data-points" >{broker.points} pontos</p>
-                  <p className="data-telephone">Telephone: {broker.telephone}</p>
+                  {seePhone ? (
+              <p className="data-telephone">{broker.telephone}</p>
+            ) : (
+              <p className="data-seePhone" onClick={() => setSeePhone(true)}>ver telefone</p>
+            )}          
                 </div>
               </Data>
             ))}

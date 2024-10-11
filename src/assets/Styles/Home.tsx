@@ -60,6 +60,15 @@ export const Broker = styled.div`
     margin-top: 5px;
     margin-bottom: 5px;
   }
+  .data-telephone{
+    font-size: 10px;
+  }
+  .data-seePhone{
+    font-size: 10px;
+    color: #FE6613;
+    text-decoration: underline;
+    cursor: pointer
+  }
 `;
 
 export const Data = styled.div`
