@@ -50,20 +50,18 @@ export const Broker = styled.div`
         object-fit: cover; 
   }
   .data-container{
-        background-color: blue;
         margin-left: 10px;
+        
   }
-  .data.name{
-    font-size: 50px;
+  .data-name{
+    font-size: 20px;
+    color: #1B2653;
   }
 `;
 
 export const Data = styled.div`
     display: flex;
     align-items: center;
-   .data.name{
-    font-size: 50px;
-  }
 `;
 
 export const Message = styled.div`
