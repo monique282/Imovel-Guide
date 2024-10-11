@@ -171,6 +171,10 @@ export const Rule3 = styled.div`
         font-size: 16px;
         font-family: 'roboto';
    }
+   .calculateToClean-rule{
+        display: flex;
+        justify-content: space-between;
+   }
    .calculate{
         background-color: #FE6613;
         color: white;
@@ -179,7 +183,6 @@ export const Rule3 = styled.div`
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 5px;
     }
     .calculate:hover {
         background-color: #e65c00;
@@ -189,6 +192,5 @@ export const Rule3 = styled.div`
 
 export const Below = styled.div`
     width: 100%;
-  // background-color: blue;
 `;
 
