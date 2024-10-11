@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 
 export default function BrokersProfileHome() {
 
- const [seePhone,setSeePhone] = useState(false);
+    const [seePhone, setSeePhone] = useState<boolean[]>([]);
 
   const listBroker = [
     { image: "https://img.freepik.com/fotos-gratis/mulher-de-negocios-elegante-e-confiante-sorrindo_176420-19466.jpg", name: "Monique", points: "1200", telephone: "38998152601" },
@@ -12,26 +12,35 @@ export default function BrokersProfileHome() {
 
   const brokersRef = useRef(null);
 
+  const phoneVisibility = (index: number) => {
+    setSeePhone(prevState => {
+      const newState = [...prevState];
+      newState[index] = !newState[index];
+      return newState;
+    });
+  };
+
   return (
-          <Broker ref={brokersRef}>
-            {listBroker.map((broker, index) => (
-              <Data key={index}>
-                <div className="image-container">
-                  <img className="blurred-image" src={broker.image} alt={`${broker.name} blurred`} />
-                  <img className="sharp-image" src={broker.image} alt={`${broker.name} sharp`} />
-                </div>
-                <div className="data-container">
-                  <h2 className="data-name">{broker.name}</h2>
-                  <p className="data-points" >{broker.points} pontos</p>
-                  {seePhone ? (
+    <Broker ref={brokersRef}>
+      {listBroker.map((broker, index) => (
+        <Data key={index}>
+          <div className="image-container">
+            <img className="blurred-image" src={broker.image} alt={`${broker.name} blurred`} />
+            <img className="sharp-image" src={broker.image} alt={`${broker.name} sharp`} />
+          </div>
+          <div className="data-container">
+            <h2 className="data-name">{broker.name}</h2>
+            <p className="data-points">{broker.points} pontos</p>
+            {seePhone[index] ? (
               <p className="data-telephone">{broker.telephone}</p>
             ) : (
-              <p className="data-seePhone" onClick={() => setSeePhone(true)}>ver telefone</p>
-            )}          
-                </div>
-              </Data>
-            ))}
-          </Broker>  
-   
+              <p className="data-seePhone" onClick={() => phoneVisibility(index)}>
+                ver telefone
+              </p>
+            )}
+          </div>
+        </Data>
+      ))}
+    </Broker>
   );
 }
