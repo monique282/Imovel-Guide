@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Rule3 } from "../assets/Styles/Home";
+import { Rule3 } from "../../assets/Styles/Home";
 import { calculateResult, toClean } from "./CalculateResultToclean";
 
 export default function Rule() {

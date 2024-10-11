@@ -1,4 +1,4 @@
-import { Register, RightSide } from '../assets/Styles/Header';
+import { Register, RightSide } from '../../assets/Styles/Header';
 
 export default function RightSideHeader() {
     return (

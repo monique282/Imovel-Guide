@@ -1,4 +1,4 @@
-import { HeaderContainer } from '../assets/Styles/Header';
+import { HeaderContainer } from '../../assets/Styles/Header';
 import LeftSideHeader from './LeftSideHeader';
 import RightSideHeader from './RightSideHeader';
 
