@@ -1,4 +1,5 @@
 import { OnPop, Below } from "../assets/Styles/Home";
+import AnimationImageDownload from "../component/Home/AnimationImageDownload";
 import BrokersProfileHome from "../component/Home/BrokersProfile";
 import MessageHome from "../component/Home/Message";
 import ModalImage from "../component/Home/ModalImage";
@@ -12,10 +13,11 @@ export default function Home() {
       <OnPop>
         <BrokersProfileHome />
         <MessageHome />
-        <Rule/> 
+        <Rule />
       </OnPop>
       <Below>
-      <ModalImage />
+        <ModalImage />
+        <AnimationImageDownload />
       </Below>
     </>
   );

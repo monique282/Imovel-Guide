@@ -194,7 +194,6 @@ export const Below = styled.div`
     align-items: center;
     justify-content: space-around;
     margin-top: 30px;
-
 `;
 export const HomeImage = styled.div`
     width: 100%;
@@ -226,5 +225,53 @@ export const Image = styled.div`
     .home-image{
         width: 100%;
         height: 100%;
+    }
+`
+export const HomeAnimationImageDownload = styled.div`
+    width: 100%;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .buton-image{
+        width: 50%;
+        background-color: #FE6613;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+`
+export const ImageAnimation = styled.div`
+    position: relative;
+    height: 300px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .home-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .buton-image {
+        position: absolute;
+        bottom: 10px;
+        background-color: #FE6613;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
     }
 `
