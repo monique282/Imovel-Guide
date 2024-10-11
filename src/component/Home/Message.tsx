@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Message } from "../assets/Styles/Home";
+import { Message } from "../../assets/Styles/Home";
 import InputMask from "react-input-mask";
-import { validatingCpf, validatingPhone, validatingSubject } from "./Home/FieldValidation";
+import { validatingCpf, validatingPhone, validatingSubject } from "./FieldValidation";
 
 export default function MessageHome() {
     const [cpf, setCpf] = useState<string>("");

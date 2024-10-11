@@ -5,12 +5,12 @@ export const OnPop = styled.div`
     display: flex; 
     align-items: center;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 30px;
 `;
 
 export const Broker = styled.div`
-    height: 371px;
-    width: 379px;
+    height: 300px;
+    width: 350px;
     border-radius: 5px;
     border: 1px solid black;  
     display: flex; 
@@ -18,8 +18,8 @@ export const Broker = styled.div`
     justify-content: space-around;
     .image-container{
         position: relative;
-        height: 168px;
-        width: 168px;
+        height: 130px;
+        width: 130px;
         border-radius: 3%;
         overflow: hidden;
         display: flex;
@@ -74,14 +74,14 @@ export const Data = styled.div`
 `;
 
 export const Message = styled.div`
-    height: 371px;
-    width: 379px;
+    height: 300px;
+    width: 350px;
     border-radius: 5px;
     border: 1px solid black;
     box-sizing: border-box;
     padding: 15px;
     .title-message{
-        margin-top: 10px;
+        margin-top: 5px;
         font-size: 30px;
         color: #1B2653;
         margin-bottom: 15px;
@@ -89,7 +89,7 @@ export const Message = styled.div`
     .cpf-message, .phone-message, .subject-message {
         width: 90%;
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
         font-size: 16px;
@@ -108,7 +108,7 @@ export const Message = styled.div`
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .toSend-message:hover {
         background-color: #e65c00;
@@ -117,8 +117,8 @@ export const Message = styled.div`
 `;
 
 export const Rule3 = styled.div`
-    height: 371px;
-    width: 379px;
+    height: 300px;
+    width: 350px;
     border-radius: 5px;
     border: 1px solid black;
     box-sizing: border-box;
@@ -130,8 +130,8 @@ export const Rule3 = styled.div`
         margin-bottom: 15px;
    }
    .allBox-rule{
-        height: 200px;
-        width: 350px;
+        height: 146px;
+        width: 320px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -146,7 +146,7 @@ export const Rule3 = styled.div`
         font-family: 'roboto';
    }
    .divider-rule{
-        width: 70px;
+        width: 50px;
         height: 0px;
         border: 1px solid #817b7b;
    }
@@ -155,7 +155,6 @@ export const Rule3 = styled.div`
         align-items: center;
         margin-bottom: 20px;
         justify-content: space-between;
-        
    }
    .secondBox-rule{
         display: flex;
@@ -186,11 +185,46 @@ export const Rule3 = styled.div`
     }
     .calculate:hover {
         background-color: #e65c00;
-    
     }
 `;
 
 export const Below = styled.div`
     width: 100%;
-`;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
 
+`;
+export const HomeImage = styled.div`
+    width: 100%;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .buton-image{
+        width: 100%;
+        background-color: #FE6613;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+`
+export const Image = styled.div`
+    height: 300px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;  
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    .home-image{
+        width: 100%;
+        height: 100%;
+    }
+`

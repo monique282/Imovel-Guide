@@ -1,6 +1,7 @@
 import { OnPop, Below } from "../assets/Styles/Home";
 import BrokersProfileHome from "../component/Home/BrokersProfile";
 import MessageHome from "../component/Home/Message";
+import ModalImage from "../component/Home/ModalImage";
 import Rule from "../component/Home/Rule3";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
         <Rule/> 
       </OnPop>
       <Below>
-
+      <ModalImage />
       </Below>
     </>
   );

@@ -1,6 +1,6 @@
-import { Broker, Data } from "../assets/Styles/Home";
+import { Broker, Data } from "../../assets/Styles/Home";
 import { useRef, useState } from "react";
-import formatPhone from "../utils/FormatPhone"
+import formatPhone from "../../utils/FormatPhone"
 
 export default function BrokersProfileHome() {
 
