@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const OnPop = styled.div`
-    width: 100%;
-    display: flex; 
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-around; 
     margin-top: 30px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 350px); 
+    @media (max-width: 1066px) {
+        grid-template-columns: repeat(2, 350px); 
+    }
+    @media (max-width: 750px) {
+        grid-template-columns: repeat(1, 350px);       
+    }
 `;
 export const Broker = styled.div`
     height: 300px;
@@ -229,6 +234,7 @@ export const Image = styled.div`
     .home-image{
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 `;
 export const HomeAnimationImageDownload = styled.div`
@@ -239,7 +245,7 @@ export const HomeAnimationImageDownload = styled.div`
     align-items: center;
     flex-direction: column;
     .buton-image{
-        width: 50%;
+        width: 100%;
         background-color: #FE6613;
         color: white;
         border: none;
@@ -247,6 +253,9 @@ export const HomeAnimationImageDownload = styled.div`
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
+        @media (max-width: 750px) {
+        margin-bottom: 5%;
+    }
     }
 `;
 export const ImageAnimation = styled.div`

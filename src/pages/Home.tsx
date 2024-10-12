@@ -9,7 +9,6 @@ import Rule from "../component/Home/Rule3";
 export default function Home() {
 
   return (
-        <>
           <OnPop>
             <BrokersProfileHome />
             <MessageHome />
@@ -18,6 +17,9 @@ export default function Home() {
             <AnimationImageDownload />
             <ImageOfTheProperty />
           </OnPop>
-        </>
   );
+
+  
 }
+
+
