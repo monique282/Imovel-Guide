@@ -8,7 +8,8 @@ export const HeaderContainer = styled.header`
     background-color: #112157; 
     @media (max-width: 1100px) { 
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        padding: 0px;
     }
 `;
 export const LeftSide = styled.div`
@@ -27,6 +28,9 @@ export const LeftSide = styled.div`
         h1 {
         margin-left: 0;
         font-size: 16px; 
+        }
+        img {
+        width: 200%; 
         }
     }
 `;
