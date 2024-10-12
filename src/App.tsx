@@ -10,6 +10,7 @@ function App() {
 
     useEffect(() => {
         const checkScreenSize = () => {
+          alert(window.innerWidth)
             setIsTablet(window.innerWidth <= 1066); 
         };
         checkScreenSize(); 
