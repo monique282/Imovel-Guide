@@ -9,7 +9,6 @@ export const HeaderContainer = styled.header`
     @media (max-width: 1100px) { 
         align-items: center;
         justify-content: space-evenly;
-        padding: 10px;
     }
 `;
 export const LeftSide = styled.div`
