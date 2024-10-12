@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HomeImage, Image } from "../../assets/Styles/Home";
 import { CloseButtonStyles, ModalContentStyles, ModalImageStyles, ModalStyles } from "../../assets/Styles/Baseboard";
 

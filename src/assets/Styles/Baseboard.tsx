@@ -7,7 +7,6 @@ export const BaseboarContainer = styled.div`
    display: flex; 
    align-items: center; 
 `;
-
 export const RightSide = styled.div`
     width: 50%;
     display: flex; 
@@ -20,7 +19,6 @@ export const RightSide = styled.div`
         margin-right: 30px;
     }
 `;
-
 export const ModalStyles = styled.div`
     position: fixed;
     z-index: 2;
