@@ -6,6 +6,7 @@ export const BaseboarContainer = styled.div`
    background-color: #1B2653;
    display: flex; 
    align-items: center; 
+   justify-content: space-around;
    margin-top: 5%;
 `;
 export const RightSide = styled.div`
@@ -13,11 +14,26 @@ export const RightSide = styled.div`
     display: flex; 
     align-items: center; 
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 10px;
     h1{
         margin-left: 30px;
         color: white;
         margin-right: 30px;
+    }
+    img {
+        width: 20%; 
+    }
+`;
+export const LeftSide = styled.div`
+    width: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    margin-right: 10px;
+    h1 {
+        margin-left: 20px;
+        font-size: 18px; 
+        color: white;
     }
 `;
 

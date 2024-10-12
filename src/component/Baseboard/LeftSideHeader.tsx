@@ -1,4 +1,5 @@
-import {LeftSide}  from '../../assets/Styles/Header';
+import { LeftSide } from "../../assets/Styles/Baseboard";
+
 export default function LeftSideHeader() {
     return (
             <LeftSide>

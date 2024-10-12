@@ -10,7 +10,7 @@ function App() {
 
     useEffect(() => {
         const checkScreenSize = () => {
-            setIsTablet(window.innerWidth <= 1100); 
+            setIsTablet(window.innerWidth <= 1066); 
         };
         checkScreenSize(); 
         window.addEventListener('resize', checkScreenSize); 
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </ContentWrapper>
-      <Baseboard />
+      <Baseboard isTablet={isTablet}/>
     </AppContainer>
   );
 }
