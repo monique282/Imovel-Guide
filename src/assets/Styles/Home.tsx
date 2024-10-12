@@ -63,7 +63,7 @@ export const Broker = styled.div`
         font-size: 10px;
         color: #FE6613;
         text-decoration: underline;
-        cursor: pointer
+        cursor: pointer;
     }
 `;
 export const Data = styled.div`
@@ -277,6 +277,16 @@ export const ImageAnimation = styled.div`
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
+    }
+    .guide-image{
+        position: absolute;
+        bottom: 10px;
+        background-color: #FE6613;
+        color: white;
+        border: none;
+        padding: 10px 46px;
+        font-size: 16px;
+        border-radius: 5px;
     }
 `
 export const HomeImage3 = styled.div`

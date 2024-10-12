@@ -15,9 +15,9 @@ export default function AnimationImageDownload() {
         <HomeAnimationImageDownload>
             <ImageAnimation>
                 <img className="home-image" src={listImage} alt="House" />
-                <button className="buton-image">
+                <div className="guide-image">
                     Imovel guide
-                </button>
+                </div>
             </ImageAnimation>
             <button className="buton-image" onClick={handleDownload}>
                 Download
