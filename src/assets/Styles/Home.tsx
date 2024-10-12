@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const OnPop = styled.div`
     width: 100%;
     display: flex; 
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin-top: 30px;
+    flex-wrap: wrap;
 `;
 export const Broker = styled.div`
     height: 300px;
@@ -15,6 +16,7 @@ export const Broker = styled.div`
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 5%;
     .image-container{
         position: relative;
         height: 130px;
@@ -77,7 +79,8 @@ export const Message = styled.div`
     border: 1px solid black;
     box-sizing: border-box;
     padding: 15px;
-    .inputContainer-message{
+    margin-bottom: 5%;
+   .inputContainer-message{
         height: 85%;
         width: 99%;
     }
@@ -127,6 +130,7 @@ export const Rule3 = styled.div`
     border: 1px solid black;
     box-sizing: border-box;
     padding: 15px;
+    margin-bottom: 5%;
    .title-rule{
         margin-top: 10px;
         font-size: 30px;
@@ -194,13 +198,6 @@ export const Rule3 = styled.div`
         background-color: #e65c00;
     }
 `;
-export const Below = styled.div`
-    width: 100%;
-    display: flex; 
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-top: 30px;
-`;
 export const HomeImage = styled.div`
     width: 100%;
     width: 350px;
@@ -208,6 +205,7 @@ export const HomeImage = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 5%;
     .buton-image{
         width: 100%;
         background-color: #FE6613;
@@ -218,7 +216,7 @@ export const HomeImage = styled.div`
         border-radius: 5px;
         cursor: pointer;
     }
-`
+`;
 export const Image = styled.div`
     height: 300px;
     width: 350px;
@@ -232,7 +230,7 @@ export const Image = styled.div`
         width: 100%;
         height: 100%;
     }
-`
+`;
 export const HomeAnimationImageDownload = styled.div`
     width: 100%;
     width: 350px;
@@ -250,7 +248,7 @@ export const HomeAnimationImageDownload = styled.div`
         border-radius: 5px;
         cursor: pointer;
     }
-`
+`;
 export const ImageAnimation = styled.div`
     position: relative;
     height: 300px;
@@ -288,7 +286,7 @@ export const ImageAnimation = styled.div`
         font-size: 16px;
         border-radius: 5px;
     }
-`
+`;
 export const HomeImage3 = styled.div`
     width: 100%;
     width: 350px;
@@ -296,7 +294,7 @@ export const HomeImage3 = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-`
+`;
 export const ModalStyles = styled.div`
     position: fixed;
     z-index: 2;

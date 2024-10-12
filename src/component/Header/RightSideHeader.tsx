@@ -3,6 +3,7 @@ import { HomeProps } from '../../Interface/Screens';
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function RightSideHeader({ isTablet }: HomeProps) {
+    
     return (
         <RightSide >
             {isTablet ? (
@@ -17,7 +18,6 @@ export default function RightSideHeader({ isTablet }: HomeProps) {
                     </Register>
                 </>
             )}
-
         </RightSide>
     );
 }

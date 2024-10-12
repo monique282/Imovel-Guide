@@ -22,7 +22,7 @@ function App() {
       <ContentWrapper>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home isTablet={isTablet} />}></Route>
+            <Route path="/" element={<Home />}></Route>
           </Routes>
         </BrowserRouter>
       </ContentWrapper>
