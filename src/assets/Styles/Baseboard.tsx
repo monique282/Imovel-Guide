@@ -9,7 +9,7 @@ export const BaseboarContainer = styled.div`
    justify-content: space-around;
 `;
 export const RightSide = styled.div`
-    width: 50%;
+    width: 70%;
     display: flex; 
     align-items: center; 
     justify-content: flex-end;
@@ -20,11 +20,16 @@ export const RightSide = styled.div`
         margin-right: 30px;
     }
     img {
-        width: 10%; 
+        height: 70px; 
+    }
+    @media(max-width: 1066px){
+        width: 100%;
+        align-items: center; 
+        justify-content: center;
     }
 `;
 export const LeftSide = styled.div`
-    width: 50%;
+    width: 30%;
     display: flex; 
     align-items: center; 
     justify-content: flex-start;
