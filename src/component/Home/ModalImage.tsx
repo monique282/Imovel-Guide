@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { HomeImage, Image } from "../../assets/Styles/Home";
-import { CloseButtonStyles, ModalContentStyles, ModalImageStyles, ModalStyles } from "../../assets/Styles/Baseboard";
+import { CloseButtonStyles, HomeImage, Image, ModalContentStyles, ModalImageStyles, ModalStyles } from "../../assets/Styles/Home";
 
 export default function ModalImage() {
   const [showModal, setShowModal] = useState(false);
