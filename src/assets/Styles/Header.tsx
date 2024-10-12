@@ -1,49 +1,66 @@
-import styled from "styled-components";
 
-export const HeaderContainer = styled.div`
-   width: 100%;
-   height: 70px;
-   background-color: #1B2653;
-   display: flex; 
-   align-items: center; 
-`;
+import styled from 'styled-components';
 
-export const LeftSide = styled.div`
-    width: 50%;
-    display: flex; 
-    align-items: center; 
-    img {
-        width: 20%;
-        margin-left: 40px;
-        margin-right: 20px;
-    }
-    h1{
-        margin-left: 30px;
-        color: white;
-    }
-`;
-
-export const RightSide = styled.div`
-    width: 50%;
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-end;
-    margin-right: 50px;
-    h1{
-        margin-left: 30px;
-        color: white;
-    }
-`;
-
-export const Register = styled.div`
-    width: 150px;
-    height: 30px;
-    margin-left: 70px;
-    color: white;
-    text-align: center;
+export const HeaderContainer = styled.header`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #112157; 
+    @media (max-width: 1100px) { 
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+`;
+export const LeftSide = styled.div`
+    display: flex;
     align-items: center;
-    border-radius: 30px;
-    border: 2px solid white;
-`
+    img {
+        width: 150px; 
+    }
+    h1 {
+        margin-left: 20px;
+        font-size: 18px; 
+        color: white;
+    }
+    @media (max-width:  1100px) { 
+        flex-direction: column;
+        h1 {
+        margin-left: 0;
+        font-size: 16px; 
+        }
+    }
+`;
+export const RightSide = styled.div`
+    display: flex;
+    align-items: center;
+    h1 {
+        margin-right: 20px;
+        font-size: 18px;
+        color: white;
+    }
+    @media (max-width:  1100px) { 
+        flex-direction: column;
+        h1 {
+        margin-right: 0;
+        font-size: 16px;
+        }
+    }
+`;
+export const Register = styled.div`
+        width: 150px;
+        height: 30px;
+        margin-left: 70px;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        border: 2px solid white;
+    @media (max-width:  1100px) { 
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+`;

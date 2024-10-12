@@ -6,6 +6,7 @@ export const BaseboarContainer = styled.div`
    background-color: #1B2653;
    display: flex; 
    align-items: center; 
+   margin-top: 5%;
 `;
 export const RightSide = styled.div`
     width: 50%;
