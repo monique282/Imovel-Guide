@@ -12,6 +12,7 @@ function App() {
     const checkScreenSize = () => {
       const viewportWidth = Math.min(window.innerWidth, document.documentElement.clientWidth || 0);
       alert(viewportWidth); 
+      alert("testando");
       setIsTablet(viewportWidth <= 1066);
     };
     
