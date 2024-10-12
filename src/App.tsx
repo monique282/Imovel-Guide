@@ -8,15 +8,27 @@ import { useEffect, useState } from "react";
 function App() {
   const [isTablet, setIsTablet] = useState(false);
 
-    useEffect(() => {
-        const checkScreenSize = () => {
-          alert(window.innerWidth)
-            setIsTablet(window.innerWidth <= 1066); 
-        };
-        checkScreenSize(); 
-        window.addEventListener('resize', checkScreenSize); 
-        return () => window.removeEventListener('resize', checkScreenSize); 
-    }, []);
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const viewportWidth = Math.min(window.innerWidth, document.documentElement.clientWidth || 0);
+      alert(viewportWidth); 
+      setIsTablet(viewportWidth <= 1066);
+    };
+    
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+  
+    // useEffect(() => {
+    //     const checkScreenSize = () => {
+    //       alert(window.innerWidth)
+    //         setIsTablet(window.innerWidth <= 1066); 
+    //     };
+    //     checkScreenSize(); 
+    //     window.addEventListener('resize', checkScreenSize); 
+    //     return () => window.removeEventListener('resize', checkScreenSize); 
+    // }, []);
   return (
     <AppContainer>
       <Header isTablet={isTablet} />
