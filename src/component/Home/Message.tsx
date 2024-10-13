@@ -48,7 +48,7 @@ export default function MessageHome() {
                 value={subject}
                 onChange={(e) => validatingSubject(e, setSubject, setSubjectError)} 
             ></textarea>
-            {subjectError && <p style={{ color: 'red', marginTop: -8, marginBottom: 10, fontSize:12 }}>{subjectError}</p>}
+            {subjectError && <p style={{ color: 'red', marginTop: -7, marginBottom: 10, fontSize:12 }}>{subjectError}</p>}
             </div>
             <button className="toSend-message" onClick={sendData}>
                 Enviar Mensagem
