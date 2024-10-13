@@ -4,7 +4,7 @@ import formatPhone from "../../utils/FormatPhone"
 
 export default function BrokersProfileHome() {
 
-    const [seePhone, setSeePhone] = useState<boolean[]>([]);
+  const [seePhone, setSeePhone] = useState<boolean[]>([]);
 
   const listBroker = [
     { image: "https://img.freepik.com/fotos-gratis/mulher-de-negocios-elegante-e-confiante-sorrindo_176420-19466.jpg", name: "Monique", points: "1200", telephone: "38998152601" },

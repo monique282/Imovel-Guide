@@ -45,7 +45,6 @@ export const RightSide = styled.div`
         justify-content: center;
         padding: 0px;
     }
-    
 `;
 export const Register = styled.div`
         width: 150px;

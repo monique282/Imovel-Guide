@@ -22,6 +22,7 @@ export const Broker = styled.div`
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 5%;
+    box-sizing: border-box;
     .image-container{
         position: relative;
         height: 130px;
@@ -253,7 +254,7 @@ export const HomeAnimationImageDownload = styled.div`
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
-        @media (max-width: 750px) {
+    @media (max-width: 750px) {
         margin-bottom: 5%;
     }
     }
@@ -322,8 +323,8 @@ export const ModalContentStyles = styled.div`
     border-radius: 10px;
     position: relative;
     text-align: center;
-    display: inline-block; /* Permite que a div ajuste o tamanho com base no conteúdo */
-    max-width: 90%; /* Limita o tamanho máximo */
+    display: inline-block; 
+    max-width: 90%; 
     max-height: 90%;
     @media (max-width: 750px) {
         max-width: 80%;

@@ -3,7 +3,6 @@ import slogan from '../../assets/images/slogan.png';
 import { HomeProps } from '../../Interface/Screens';
 
 export default function LeftSideHeader({isTablet}: HomeProps) {
-
     return (
         <LeftSide>
             {isTablet ? ( 

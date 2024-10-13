@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Drawer, List, Box } from '@mui/material';
 
 export default function RightSideHeader({ isTablet }: HomeProps) {
-    const [openMenu, setOpenMenu] = useState(false);
+    const [openMenu, setOpenMenu] = useState<boolean>(false);
 
     const toggleDrawer = (open: boolean) => () => {
         setOpenMenu(open);
@@ -38,7 +38,6 @@ export default function RightSideHeader({ isTablet }: HomeProps) {
     );
 
     return (
-        <>
             <RightSide>
                 {isTablet ? (
                     <>
@@ -61,6 +60,5 @@ export default function RightSideHeader({ isTablet }: HomeProps) {
                     </>
                 )}
             </RightSide>
-        </>
     );
 }

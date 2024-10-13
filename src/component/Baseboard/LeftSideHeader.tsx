@@ -6,8 +6,7 @@ export default function LeftSideHeader() {
                 <h1>Termos</h1>
                 <h1>Contatos</h1>
                 <h1>Sobre</h1>
-            </LeftSide>
-           
+            </LeftSide>  
     );
 }
 
