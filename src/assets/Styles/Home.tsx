@@ -17,7 +17,7 @@ export const Broker = styled.div`
     height: 300px;
     width: 350px;
     border-radius: 5px;
-    border: 1px solid black;  
+    border: 1px solid #1B2653;  
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
@@ -31,7 +31,7 @@ export const Broker = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
+        border: 1px solid #1B2653;  
         margin-left: 8px;
     }
     .blurred-image {
@@ -81,7 +81,7 @@ export const Message = styled.div`
     height: 300px;
     width: 350px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #1B2653;  
     box-sizing: border-box;
     padding: 15px;
     margin-bottom: 5%;
@@ -132,7 +132,7 @@ export const Rule3 = styled.div`
     height: 300px;
     width: 350px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #1B2653;  
     box-sizing: border-box;
     padding: 15px;
     margin-bottom: 5%;
@@ -226,7 +226,7 @@ export const Image = styled.div`
     height: 300px;
     width: 350px;
     border-radius: 5px;
-    border: 1px solid black;  
+    border: 1px solid #1B2653;  
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
@@ -263,7 +263,7 @@ export const ImageAnimation = styled.div`
     height: 300px;
     width: 350px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #1B2653;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,16 +316,21 @@ export const ModalStyles = styled.div`
     justify-content: center;
     align-items: center;
 `;
-  export const ModalContentStyles = styled.div`
-    width: 50%;
-    height: 50%;
+export const ModalContentStyles = styled.div`
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     position: relative;
     text-align: center;
+    display: inline-block; /* Permite que a div ajuste o tamanho com base no conteúdo */
+    max-width: 90%; /* Limita o tamanho máximo */
+    max-height: 90%;
+    @media (max-width: 750px) {
+        max-width: 80%;
+        max-height: 80%;
+    }
 `;
-  export const CloseButtonStyles = styled.span`
+export const CloseButtonStyles = styled.span`
     width: 100%;
     position: absolute;
     display: flex;
@@ -341,11 +346,15 @@ export const ModalStyles = styled.div`
     font-size: 30px;
     cursor: pointer;
 `;
-  export const ModalImageStyles = styled.img`
+export const ModalImageStyles = styled.img`
+    width: auto; 
+    height: auto; 
     max-width: 100%;  
-    max-height: 95%;
+    max-height: 100%;
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto; 
     margin-top: 30px;
-    background-color: #153ee1;
 `;
 export const ModalZoomImageStyles = styled.img`
     max-width: 100%;  
