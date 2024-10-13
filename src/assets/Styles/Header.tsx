@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
     background-color: #112157; 
     @media (max-width: 1066px) { 
@@ -13,9 +13,9 @@ export const HeaderContainer = styled.header`
     }
 `;
 export const LeftSide = styled.div`
-    width: 50%;
+    width: 42%;
     display: flex;
-    align-items: center;    
+    align-items: center; 
     img {
         width: 150px; 
     }
@@ -49,7 +49,6 @@ export const RightSide = styled.div`
 export const Register = styled.div`
         width: 150px;
         height: 30px;
-        margin-left: 6%;
         color: white;
         text-align: center;
         display: flex;

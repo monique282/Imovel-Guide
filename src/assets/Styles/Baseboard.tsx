@@ -6,10 +6,10 @@ export const BaseboarContainer = styled.div`
    background-color: #1B2653;
    display: flex; 
    align-items: center; 
-   justify-content: space-around;
+   justify-content: center;
 `;
 export const RightSide = styled.div`
-    width: 70%;
+    width: 60%;
     display: flex; 
     align-items: center; 
     justify-content: flex-end;
