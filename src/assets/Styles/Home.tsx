@@ -356,6 +356,7 @@ export const ModalImageStyles = styled.img`
     display: block;
     margin: 0 auto; 
     margin-top: 30px;
+    border-radius: 5px;
 `;
 export const ModalZoomImageStyles = styled.img`
     max-width: 100%;  
@@ -363,6 +364,7 @@ export const ModalZoomImageStyles = styled.img`
     margin-top: 30px;
     background-color: #153ee1;
     animation: zoomOut 10s ease-out forwards;
+    border-radius: 5px;
     @keyframes zoomOut {
         0% {
             transform: scale(3.5);  
