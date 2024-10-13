@@ -56,19 +56,19 @@ export const Broker = styled.div`
         margin-left: 10px; 
     }
     .data-name{
-        font-size: 20px;
+        font-size: 29px;
         color: #1B2653;
     }
     .data-points{
-        font-size: 12px;
+        font-size: 15px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
     .data-telephone{
-        font-size: 10px;
+        font-size: 15px;
     }
     .data-seePhone{
-        font-size: 10px;
+        font-size: 15px;
         color: #FE6613;
         text-decoration: underline;
         cursor: pointer;
