@@ -5,13 +5,51 @@ export function validatingCpf(
 ) {
     const value = e.target.value;
     setCpf(value);
-    const cleanedCpf = value.replace(/\D/g, "");
+    const cleanedCpf = value.replace(/[^\d]/g, '');
     if (cleanedCpf.length < 11) {
         setCpfError("CPF inválido. Deve ter 11 dígitos.");
+        
     } else {
         setCpfError("");
+        validateCPF(value,setCpfError);
     }
 }
+
+function validateCPF(e: string, setCpfError: React.Dispatch<React.SetStateAction<string>>) {
+    let sum = 0;
+    let rest: number;
+    const cpf = e.replace(/[^\d]/g, ''); 
+    if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) {
+        setCpfError("CPF digitado inválido.");
+        return;
+    }
+    for (let i = 1; i <= 9; i++) {
+        sum += parseInt(cpf.substring(i - 1, i)) * (11 - i);
+    }
+    rest = (sum * 10) % 11;
+    if (rest === 10 || rest === 11) {
+        rest = 0;
+    }
+    if (rest !== parseInt(cpf.substring(9, 10))) {
+        setCpfError("CPF digitado inválido.");
+        return;
+    }
+    sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum += parseInt(cpf.substring(i - 1, i)) * (12 - i);
+    }
+
+    rest = (sum * 10) % 11;
+    if (rest === 10 || rest === 11) {
+        rest = 0;
+    }
+    if (rest !== parseInt(cpf.substring(10, 11))) {
+        setCpfError("CPF digitado inválido.");
+        return;
+    }
+    setCpfError("")
+}
+
 
 export function validatingPhone(
     e: React.ChangeEvent<HTMLInputElement>,
