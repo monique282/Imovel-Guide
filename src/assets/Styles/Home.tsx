@@ -53,7 +53,7 @@ export const Broker = styled.div`
         object-fit: cover; 
     }
     .data-container{
-        margin-left: 10px;   
+        margin-left: 10px; 
     }
     .data-name{
         font-size: 20px;
@@ -84,7 +84,7 @@ export const Message = styled.div`
     border-radius: 5px;
     border: 1px solid #1B2653;  
     box-sizing: border-box;
-    padding: 15px;
+    padding: 7px;
     margin-bottom: 5%;
    .inputContainer-message{
         height: 85%;
@@ -135,7 +135,7 @@ export const Rule3 = styled.div`
     border-radius: 5px;
     border: 1px solid #1B2653;  
     box-sizing: border-box;
-    padding: 15px;
+    padding: 7px;
     margin-bottom: 5%;
    .title-rule{
         margin-top: 10px;
