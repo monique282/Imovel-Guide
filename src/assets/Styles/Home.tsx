@@ -87,7 +87,7 @@ export const Message = styled.div`
     padding: 7px;
     margin-bottom: 5%;
    .inputContainer-message{
-        height: 85%;
+        height: 81%;
         width: 99%;
     }
     .title-message{
@@ -123,7 +123,6 @@ export const Message = styled.div`
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 5px;
     }
     .toSend-message:hover {
         background-color: #e65c00;
