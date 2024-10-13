@@ -24,7 +24,7 @@ export default function MessageHome() {
     return (
         <Message>
             <div className="inputContainer-message">
-            <h1 className="title-message">Mande uma mensagem:</h1>
+            <h1 className="title-message">Mande mensagem:</h1>
             <InputMask
                 mask="999.999.999-99"
                 className="cpf-message"
