@@ -92,7 +92,7 @@ export const Message = styled.div`
     }
     .title-message{
         margin-top: 5px;
-        font-size: 30px;
+        font-size: 29px;
         color: #1B2653;
         margin-bottom: 5px;
     }
@@ -139,7 +139,7 @@ export const Rule3 = styled.div`
     margin-bottom: 5%;
    .title-rule{
         margin-top: 10px;
-        font-size: 30px;
+        font-size: 29px;
         color: #1B2653;
         margin-bottom: 15px;
    }
