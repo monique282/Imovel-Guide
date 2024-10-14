@@ -36,7 +36,7 @@ export default function Rule() {
               </input>
               <div className="divider-rule"></div>
               <div className="result-rule">
-                {result !== null && <span>{result}</span>}
+                {result !== null && <span>{result.toFixed(2)}</span>}
               </div>
             </div>
           </div>
